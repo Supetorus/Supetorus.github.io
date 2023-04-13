@@ -36,53 +36,60 @@
 
     <!-- Page Header -->
     <header class="header header-mini">
-        <div class="header-title">Bitsy</div>
+        <div class="header-title">LIT Engine</div>
     </header>
     <!-- End of Page Header -->
 
     <!-- Body section -->
     <section class="section">
         <div class="container">
-            <div style="width:20rem; margin:auto" class="row d-flex justify-content-around text-center">
+            <div class="row d-flex justify-content-center text-center">
                 <a href="https://github.com/Supetorus/LIT" target="_blank">
                     <img src="assets/imgs/github_icon.png" alt="github icon">
                     <h2>GitHub</h2>
                 </a>
-                <a href="https://store.steampowered.com/app/2325070/Bitsy/" target="_blank">
-                    <img src="assets/imgs/steam_icon.png" alt="steam icon">
-                    <h2>Steam</h2>
-                </a>
             </div>
+            <div style="padding:1rem"></div>
             <div class="row d-flex justify-content-around">
-                <img src="assets/imgs/Bitsy/Cameras.png" alt="" class="img-thumbnail col-sm-5">
-                <img src="assets/imgs/Bitsy/PatrolEnemies.png" alt="" class="img-thumbnail col-sm-5">
-                <img src="assets/imgs/Bitsy/OnVent.png" alt="" class="img-thumbnail col-sm-5">
+                <img src="assets/imgs/lit/lit.png" alt="" class="img-thumbnail col-sm-5">
+                <img src="assets/imgs/lit/wireframe.png" alt="" class="img-thumbnail col-sm-5">
             </div>
+            <div style="padding:1rem"></div>
             <div class="row text-center text-md-left">
                 <div class="pl-md-4 col-md-9">
                     <!-- <h6 class="title">Bitsy</h6>
                     <p class="subtitle">Unity game</p> -->
                     <p>
-                        Bitsy is a stealth puzzle game where you play as a robotic spider to accomplish missions. This
-                        game was developed as part of a team during a 10 week internship with Neumont Game Studio. Bitsy
-                        was built using Unity Engine.
+                        LIT Engine is my capstone project at Neumont College of Computer Science. It started out as a
+                        rendering engine to learn about how 3D models are drawn to the screen. This project will
+                        continue to grow as I use it to learn about other game engine technologies.
+                        ​</p>
+                    <p>
+                        I chose to use Direct3D11 as my rendering API because I heard that OpenGL is outdated, but
+                        looking back I would have been able to accomplish more if I had used OpenGL because the learning
+                        resources seem to be more plentiful and beginner friendly.
                     </p>
                     <p>
-                        The spider uses a custom character controller to walk on virtually any surface at any angle. The
-                        body is procedurally animated so the legs will always match up with the spider's movement and
-                        the shape of what they are walking on. The camera follows at a set distance and doesn't clip
-                        through walls.
+                        The editor functionality of this project may not be very impressive. The aim of this project was
+                        primarily to learn the technologies. Having something impressive to an end user or casual
+                        observer was secondary. I put a large emphasis in my own work on correctness of code. I didn't
+                        want to hack something together to look good, but rather to have high quality code that could be
+                        easily modified and built upon.
                     </p>
                     <p>
-                        The player has several abilities such as an EMP grenade, smoke grenade, a knockout dart, and
-                        temporary invisibility. They can also pick up a lunge upgrade which allows them to jump, and a
-                        web zip ability which shoots a web where the player is looking and pulls them across the gap to
-                        their target.
+                        The project is written in C++, with HLSL shaders.
                     </p>
                     <p>
-                        The player can be detected either visually by being inside the cone of vision of a camera or one
-                        of the robots, or by tripping the yellow lasers. If they are fully detected then the robots will
-                        shoot at the player, and turrets pop out and shoot as well.
+                        Features
+                    <ul>
+                        <li>Loads most standard model file types using assimp.</li>
+                        <li>Live scene editing (translating, rotating, and scaling models as well as moving and rotating
+                            the camera), saving, and reloading.</li>
+                        <li>Realtime lighting.</li>
+                        <li>Loads and saves scenes in yaml using yaml-cpp.</li>
+                        <li>Loads most standard image formats for texturing using stb_image.</li>
+                        <li>Skyboxes</li>
+                    </ul>
                     </p>
                     <!-- <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button> -->
                 </div>
